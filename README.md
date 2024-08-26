@@ -1,63 +1,37 @@
-# Intro:
-
-This real-world dataset was found on Kaggle, and contains data on 303 patients from (1) The Hungarian Institute of Cardiology, (2) University Hospital, Zurich, (3) University Hospital, Basel, (4) V.A. Medical Center, Long Beach, and (5) The Cleveland Clinic Foundation.  This dataset was donated to the greater scientific community in 1988 and has since been cited by dozens of academic papers and used as a sort of testing sandbox for new ideas in machine learning.  
-
-The data consists of 14 attributes.  Some attributes are continuous, like age and cholesterol level.  Some are categorical, like sex and type of chest pain.  The task is to use the first 13 attributes to predict the 14th - the presence of heart disease in a patient.  This task is complicated by the fact that the training set is so small.  We have to be very careful because even a modest (by todays standards) neural network has more degrees of freedom than there are data points in our set!
-
-In this project we'll explore various ML models for this task.  Our main tools will be the python scikit-learn and tensorflow libraries.  It should be stated straightaway, however, that we should not hope for a model with 100% accuracy - indeed, we should be skeptical of any model that does too well, as its success will likely be the result of a large parameter space. What we will find is quite reassuring:  most models achieve an accuracy of .885.  This consistency across many types of model suggests a Bayes Error probably around 8-10%.  
+<h1 align="center">Hi 👋, I'm Amer Al-Jabri</h1>
+<h3 align="center">A passionate Full Stack developer from Yemen</h3>
 
 
+<p align="left"> <a href="https://twitter.com/ameraljabri8080" target="blank"><img src="https://img.shields.io/twitter/follow/ameraljabri8080?logo=twitter&style=for-the-badge" alt="ameraljabri8080" /></a> </p>
 
-# Getting Started: Imports and Data Preparation
-Let's go ahead and import our modules and load our training data:
+- 🌱 I’m currently learning **ERPNext customization**
 
-```python
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
+- 👨‍💻 All of my projects are available at [https://github.com/AmerAljabri/AmerAljabri](https://github.com/AmerAljabri/AmerAljabri)
 
-from sklearn.metrics import confusion_matrix
-from sklearn.model_selection import train_test_split 
+- 💬 Ask me about **Flutter,Python,ASP.NET Framework**
 
-from sklearn.linear_model import LogisticRegression
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.svm import SVC
-from sklearn.naive_bayes import GaussianNB
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier
+- 📫 How to reach me **ameraljabri180@gmail.com**
 
-from keras.models import Sequential
-from keras.layers import Dense, ReLU, Dropout
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://twitter.com/ameraljabri8080" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="ameraljabri8080" height="30" width="40" /></a>
+</p>
 
-pd.options.mode.chained_assignment = None            # Get rid of warning messages
-myData = pd.read_csv("heart.csv")
-```
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://dart.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://flutter.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://laravel.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/laravel/laravel-plain-wordmark.svg" alt="laravel" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer"> <img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg" alt="mssql" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://www.oracle.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="40" height="40"/> </a> <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://www.sqlite.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite" width="40" height="40"/> </a> <a href="https://unity.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40"/> </a> </p>
 
-Next (Optional): Rename data fields to be more descriptive.
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=ameraljabri&show_icons=true&locale=en&layout=compact" alt="ameraljabri" /></p>
 
-```python
-myData = pd.read_csv("heart.csv")
-myData.columns = ['age', 'sex', 'chest_pain_type', 'resting_blood_pressure', 'cholesterol', 'fasting_blood_sugar', 'rest_ecg', 'max_heart_rate_achieved', 'exercise_induced_angina', 'st_depression', 'st_slope', 'num_major_vessels', 'thalassemia', 'target']
-myData['sex'][myData['sex'] == 0] = 'female'
-myData['sex'][myData['sex'] == 1] = 'male'
-myData['chest_pain_type'][myData['chest_pain_type'] == 1] = 'typical angina'
-myData['chest_pain_type'][myData['chest_pain_type'] == 2] = 'atypical angina'
-myData['chest_pain_type'][myData['chest_pain_type'] == 3] = 'non-anginal pain'
-myData['chest_pain_type'][myData['chest_pain_type'] == 4] = 'asymptomatic'
-myData['fasting_blood_sugar'][myData['fasting_blood_sugar'] == 0] = 'lower than 120mg/ml'
-myData['fasting_blood_sugar'][myData['fasting_blood_sugar'] == 1] = 'greater than 120mg/ml'
-myData['rest_ecg'][myData['rest_ecg'] == 0] = 'normal'
-myData['rest_ecg'][myData['rest_ecg'] == 1] = 'ST-T wave abnormality'
-myData['rest_ecg'][myData['rest_ecg'] == 2] = 'left ventricular hypertrophy'
-myData['exercise_induced_angina'][myData['exercise_induced_angina'] == 0] = 'no'
-myData['exercise_induced_angina'][myData['exercise_induced_angina'] == 1] = 'yes'
-myData['st_slope'][myData['st_slope'] == 1] = 'upsloping'
-myData['st_slope'][myData['st_slope'] == 2] = 'flat'
-myData['st_slope'][myData['st_slope'] == 3] = 'downsloping'
-myData['thalassemia'][myData['thalassemia'] == 1] = 'normal'
-myData['thalassemia'][myData['thalassemia'] == 2] = 'fixed defect'
-myData['thalassemia'][myData['thalassemia'] == 3] = 'reversible defect'
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=ameraljabri&show_icons=true&locale=en" alt="ameraljabri" /></p>
+
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=ameraljabri&" alt="ameraljabri" /></p>
+
+
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=ameraljabri&label=Profile%20views&color=0e75b6&style=flat" alt="ameraljabri" /> </p>
+
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=ameraljabri" alt="ameraljabri" /></a> </p>
+
+
 ```
 
 Important: Use one-hot encoding for categorical variables.

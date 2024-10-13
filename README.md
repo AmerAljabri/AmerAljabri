@@ -4,7 +4,7 @@
 
 <p align="left"> <a href="https://twitter.com/ameraljabri8080" target="blank"><img src="https://img.shields.io/twitter/follow/ameraljabri8080?logo=twitter&style=for-the-badge" alt="ameraljabri8080" /></a> </p>
 
-- 🌱 I’m currently learning **vue.js **
+- 🌱 I’m currently learning **Vue.js **
 
 - 👨‍💻 All of my projects are available at [https://github.com/AmerAljabri/AmerAljabri](https://github.com/AmerAljabri/AmerAljabri)
 

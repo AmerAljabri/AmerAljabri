@@ -6,7 +6,7 @@
 
 - 🌱 I’m currently learning **Vue.js **
 
-- 👨‍💻 All of my projects are available at [https://github.com/Amer-Tawfiq(https://https://github.com/Amer-Tawfiq)
+- 👨‍💻 All of my projects are available at [https://github.com/Amer-Tawfiq
 
 - 💬 Ask me about **Flutter,Python,django,js,ASP.NET Framework**
 

@@ -2,7 +2,7 @@
 <h3 align="center">A passionate Full Stack developer from Yemen</h3>
 
 
-<p align="left"> <a href="" target="blank"><img src="https://img.shields.io/twitter/follow/JupaA80?logo=twitter&style=for-the-badge" alt="" /></a> </p>
+<p align="left"> <a href="https://x.com/JupaA80" target="blank"><img src="https://img.shields.io/twitter/follow/JupaA80?logo=twitter&style=for-the-badge" alt="" /></a> </p>
 
 - 🌱 I’m currently learning **Vue.js **
 
